@@ -13,13 +13,12 @@
 	<div class="login">
 		<h3>Register</h3>
 		<form action="index.php" method="post" onsubmit="return RegistrationPasswordsMatch()">
-			<div class="error" id="registration_error"></div>
 			<p>Username: <input name="user" type="text"></p>
 			<p>Password: <input id="register_password" name="password" type="password"></p>
 			<p>Password Confirm: <input id="register_password_confirm" type="password"></p>
 			<input type="button" onclick="submit" value="Submit">
 		</form>
-		<script type="text/JavaScript">
+		<script>
 			// Validate New passwords match
 			function RegistrationPasswordsMatch(){
 				var pass1 = document.getElementById('register_password').value;

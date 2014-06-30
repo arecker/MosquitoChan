@@ -12,7 +12,7 @@
 	</div>
 	<div class="login">
 		<h3>Register</h3>
-		<form action="index.php" method="post" onsubmit="return RegistertionPasswordsMatch()">
+		<form action="index.php" method="post" onsubmit="return RegistrationPasswordsMatch()">
 			<div class="error" id="registration_error"></div>
 			<p>Username: <input name="user" type="text"></p>
 			<p>Password: <input id="register_password" name="password" type="password"></p>
@@ -22,7 +22,9 @@
 		<script type="text/JavaScript">
 			// Validate New passwords match
 			function RegistrationPasswordsMatch(){
-			
+				var pass1 = document.getElementById('register_password').value;
+				var pass2 = document.getElementById('register_password_confirm').value;
+				return pass1 == pass2;
 			}
 		</script>
 	</div>

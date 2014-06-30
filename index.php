@@ -11,13 +11,6 @@
 		<p><em>A Place for posting</em></p>
 	</div>
 	<div class="login">
-		<h3>Register</h3>
-		<form action="index.php" method="post" onsubmit="return RegistrationPasswordsMatch()">
-			<p>Username: <input name="user" type="text"></p>
-			<p>Password: <input id="register_password" name="password" type="password"></p>
-			<p>Password Confirm: <input id="register_password_confirm" type="password"></p>
-			<input type="button" onclick="submit" value="Submit">
-		</form>
 		<script>
 			// Validate New passwords match
 			function RegistrationPasswordsMatch(){
@@ -30,5 +23,12 @@
 				}
 			}
 		</script>
+		<h3>Register</h3>
+		<form action="index.php" method="post" onsubmit="return RegistrationPasswordsMatch()">
+			<p>Username: <input name="user" type="text"></p>
+			<p>Password: <input id="register_password" name="password" type="password"></p>
+			<p>Password Confirm: <input id="register_password_confirm" type="password"></p>
+			<input type="submit" value="Submit">
+		</form>
 	</div>
 </body>

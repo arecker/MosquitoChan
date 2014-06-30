@@ -24,7 +24,11 @@
 			function RegistrationPasswordsMatch(){
 				var pass1 = document.getElementById('register_password').value;
 				var pass2 = document.getElementById('register_password_confirm').value;
-				return pass1 == pass2;
+				if (pass1 == pass2) {
+					return true;
+				} else {
+					alert('Passwords must match.')
+				}
 			}
 		</script>
 	</div>

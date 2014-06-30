@@ -12,7 +12,7 @@
 	</div>
 	<div class="login">
 		<h3>Register</h3>
-		<form action="index.php" method="post" onsubmit="return RegisterationPasswordsMatch()">
+		<form action="index.php" method="post" onsubmit="return RegistertionPasswordsMatch()">
 			<div class="error" id="registration_error"></div>
 			<p>Username: <input name="user" type="text"></p>
 			<p>Password: <input id="register_password" name="password" type="password"></p>
@@ -21,18 +21,8 @@
 		</form>
 		<script type="text/JavaScript">
 			// Validate New passwords match
-			function RegistrationPasswordsMatch() {
-				var pass1 = document.getElementById('register_password').value;
-				var pass2 = document.getElementById('register_password_confirm').value;
-				if (pass1 == pass2) {
-					return true;
-				} else {
-					pass1 = '';
-					pass2 = '';
-					console.log('here');
-					document.getElementById('registration_error').innerHTML = '<p>The Passwords do not match.</p>';
-					return false;
-				}
+			function RegistrationPasswordsMatch(){
+			
 			}
 		</script>
 	</div>

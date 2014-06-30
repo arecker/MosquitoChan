@@ -19,12 +19,13 @@
 				if (pass1 == pass2) {
 					return true;
 				} else {
-					alert('Passwords must match.')
+					document.getElementById('registration_error').innerHTML = 'Passwords must match.'
 				}
 			}
 		</script>
 		<h3>Register</h3>
 		<form action="index.php" method="post" onsubmit="return RegistrationPasswordsMatch()">
+			<div id="registration_error" class="error"></div>
 			<p>Username: <input name="user" type="text"></p>
 			<p>Password: <input id="register_password" name="password" type="password"></p>
 			<p>Password Confirm: <input id="register_password_confirm" type="password"></p>

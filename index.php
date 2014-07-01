@@ -38,14 +38,13 @@
 </body>
 <footer>
 	<?php
-		include('connection.php');
-
 		// Register New User
 		if ($_POST['new_user'] && $_POST['new_password']) {
 			CreateNewUser($_POST['new_user'], $_POST['new_password']);
 		}
 
 		function CreateNewUser($username, $password){
+			include('connection.php');
 			$connection = mysql_connect($dbhost, $dbuser, $dbpass);
 			mysql_select_db('Mosquito');
 			$sql = 'INSERT INTO user (username, password) VALUES($username, $password);';

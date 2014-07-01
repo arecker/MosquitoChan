@@ -47,7 +47,7 @@
 			include('connection.php');
 			$connection = mysql_connect($dbhost, $dbuser, $dbpass);
 			mysql_select_db('Mosquito');
-			$sql = 'INSERT INTO user (username, password) VALUES($username, $password);';
+			$sql = "INSERT INTO user (username, password) VALUES($username, $password);";
 			$returned = mysql_query($sql, $connection);
 
 			// Check for failure

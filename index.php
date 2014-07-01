@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <head>
+	<?php
+		ini_set('display_errors', 'On');
+	?>
 	<title>Mosquito Chan</title>
 	<style>
 		.error { color: red;}

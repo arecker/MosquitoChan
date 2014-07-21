@@ -8,11 +8,15 @@
        margin-left: 2em;
        max-width: 50%;
     }
+
+    #site-title {
+      margin: 0 auto;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Mosquito Chan ( ͡° ͜ʖ ͡°) </h1>
+  <h1 id="site-title">Mosquito Chan ( ͡° ͜ʖ ͡°) </h1>
 
   <p>
     <h2>Start Thread</h2>

@@ -22,7 +22,7 @@
 <?php
   require('connection.php');
   $connection = mysqli_connect($DBHOST, $DBUSER, $DBPASS, "Mosquito");
-  $result = mysqli_query($connection, 'SELECT * FROM threads ORDER BY timestamp DESC');
+  $result = mysqli_query($connection, "CALL get_all_threads();");
   mysqli_close($connection);
   try {
     while($row = mysqli_fetch_array($result)) {

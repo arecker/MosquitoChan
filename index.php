@@ -26,8 +26,10 @@
   mysqli_close($connection);
   try {
     while($row = mysqli_fetch_array($result)) {
+      echo '<div class="thread"';
       echo '<h2>' . $row['title'] . '</h2>';
       echo '<p>' . $row['text'] . '</p>';
+      echo '</div>';
       echo "<br>";
     }
   } catch (Exception $e) {

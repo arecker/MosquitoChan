@@ -24,10 +24,14 @@
   $connection = mysqli_connect($DBHOST, $DBUSER, $DBPASS, "Mosquito");
   $result = mysqli_query($connection, 'SELECT * FROM threads ORDER BY timestamp DESC');
   mysqli_close($connection);
-  while($row = mysqli_fetch_array($result)) {
-    echo '<h2>' . $row['title'] . '</h2>';
-    echo '<p>' . $row['text'] . '</p>';
-    echo "<br>";
+  try {
+    while($row = mysqli_fetch_array($result)) {
+      echo '<h2>' . $row['title'] . '</h2>';
+      echo '<p>' . $row['text'] . '</p>';
+      echo "<br>";
+    }
+  } catch (Exception $e) {
+    // whatever
   }
 ?>
 </body>

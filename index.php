@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Mosquito Chan</title>
+  <style>
+    .thread {
+       margin-left: 2em;
+       max-width: 50%;
+    }
+  </style>
 </head>
 
 <body>
@@ -28,6 +34,7 @@
     while($row = mysqli_fetch_array($result)) {
       echo '<div class="thread">';
       echo '<h2>' . $row['title'] . '</h2>';
+      echo '<em>' . $row['timestamp'] . '</em>';
       echo '<p>' . $row['text'] . '</p>';
       echo '</div>';
       echo "<br>";

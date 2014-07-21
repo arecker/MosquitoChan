@@ -10,7 +10,8 @@
     }
 
     #site-title {
-      margin: 0 auto;
+      margin-left: 0;
+      margin-right: auto;
     }
   </style>
 </head>

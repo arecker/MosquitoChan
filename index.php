@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <h1>Mosquito Chan</h1>
+  <h1>Mosquito Chan ( ͡° ͜ʖ ͡°) </h1>
 
   <p>
     <h2>Start Thread</h2>
